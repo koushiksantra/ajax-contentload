@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    </head>
+
+    <body>
+
+
+
+        <button onclick="samol()">sss</button>
+        <div id="container">
+
+            <div id='destination' >
+                <form method="post" class="pointer" action="temp.php">
+                    <input type="text" value="koushik" name="fname">
+                    <input type="checkbox" name="present" value="1" checked="checked">
+                    <select name='time'>
+                        <option selected="selected">day</option>
+                        <option >Night</option>
+                    </select>
+                    <input type="radio" name="zender" value="male" checked="checked">
+                    <textarea name="desc">Hi I am koushik santra</textarea>
+                    <input type='button'  name='submit'>
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+    <script>
+        
+//        $("#container").update({destination:'.pointer',dataType:'JSON'});
+//        $("#container").update({destination:'.pointer'});
+function samol(){
+    $("#container").update({destination:'.pointer'});
+}
+    </script>
+</html>
